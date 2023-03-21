@@ -1,0 +1,20 @@
+.skills{
+width: 70vh;
+height: 70vh;
+border-radius: 50%;
+background-color:green;
+background: repeating-conic-gradient(
+  from 0deg,
+  green 0deg 50deg,
+  blue 50deg 100deg,
+  red 100deg 150deg,
+  yellow 150deg 200deg,
+  orange 200deg 360deg
+);
+
+}
+.skills-cont{
+font-size: 30px;
+padding-left: 50px;
+
+}
