@@ -1,42 +1,33 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-header{
-  position: absolute;
-}
-p{
-  max-width: 25em;
-}
+
+
+
 nav{
   position: fixed;
-  display: inline;
-  height: 50px;
+  height: 70px;
   background-color: cadetblue;
   width: 100vw;
   z-index: 2;
-  display: grid;
   text-align: right;
-  align-items: center;
   font-weight: 600;
   font-size: large;
-  padding-top: 10px;
+
+}
+.nav-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 .img-container{
-  width: 70px;
-  height: 70px;
-  
-}
+  width: 150px;
+  height: 150px;
+  }
 body{
-  display: flex;
   line-height: 1.5;
 }
 img{
-  
-  width: 100%; /* or any custom size */
-    height: 100%; 
-    object-fit: contain;
+ width: 100%; /* or any custom size */
+ height: 100%; 
+ object-fit: contain;
 }
 nav a{
   text-decoration-line: none;
@@ -44,29 +35,25 @@ nav a{
   color: black;
 }
 .right {
-  display: flex;
-  align-items: left;
-  width: 40vw;
-  max-width: 800px;
-  
-  margin-left: 5rem;
-  padding: 5rem 0;
-}
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-rows: 1fr ;
+  }
 .left {
-  display: flex;
-  align-items: right;
-  width: 40vw;
-  max-width: 800px;
-  
-  padding: 5rem 0;
-
-}
+ width: 50vw;
+ margin: 0 auto;
+ text-align: center;
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ 
+  }
 main{
-  width: 90vw;
-  margin-top: 2rem;
-  position: absolute;
-  top: 30px;
-  display: flex;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: white;
 }
 .nav-item{
   display:inline;
@@ -74,33 +61,55 @@ main{
   padding-right:2rem;
   text-decoration: none;
 }
-a{
-  text-decoration: none;
-  
-}
-.nav-list{
-  display:inline;
-  float: right;
-  padding-right: 2rem;
-  
-}
+
 .skills{
+display: inline-block;
 width: 30vh;
 height: 30vh;
 border-radius: 50%;
 background-color:green;
 background: repeating-conic-gradient(
   from 0deg,
-  green 0deg 50deg,
-  blue 50deg 100deg,
-  red 100deg 150deg,
-  yellow 150deg 200deg,
-  orange 200deg 360deg
+  green 0deg 60deg,
+  blue 60deg 120deg,
+  red 120deg 220deg,
+  yellow 220deg 280deg,
+  orange 280deg 360deg
 );
-
 }
 .skills-cont{
 font-size: 30px;
 padding-left: 50px;
+}
+footer {
+padding-bottom: 2rem;
+background-color: blueviolet;
+display: grid;
+place-items: center;
+}
 
+.skills-info{
+  float: right;
+  margin-left: 2rem;
+}
+.skills-cont{
+  float: left;
+}
+.css{
+  color:blue
+}
+.html{
+  color:yellow
+}
+.js{
+  color:red
+}
+.python{
+  color:orange
+}
+.react{
+  color:green
+}
+h1, h2, h3, h4{
+  text-transform: capitalize;
 }
